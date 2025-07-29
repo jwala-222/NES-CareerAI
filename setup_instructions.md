@@ -1,5 +1,9 @@
 # 📦 Requirements
 
+system requirements -
+    ram-16GB (Recommended) ///or 8(dedicated)+8(swap) (only for linux users)
+    cpu above i5-11th gen (no graphics card needed the integrated graphics is fine)
+
 # 🐍 Python Libraries
 
 Install the required Python libraries with:

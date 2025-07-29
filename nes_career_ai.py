@@ -5,8 +5,16 @@ from sentence_transformers import SentenceTransformer
 from sklearn.neighbors import NearestNeighbors
 from collections import Counter
 
+maindata="karrierewege.csv"
 
-data = pd.read_csv("karrierewege.csv")
+if os.path.exists(maindata):
+    print("Found main database , loading from file...") 
+    data = pd.read_csv(maindata)
+    
+else:
+    print(" No cache found, please visit https://drive.google.com/file/d/1s48kuUCi3usaXTMns8kdvFDouvnOiPC-/view?usp=sharing and download the file.")
+    print("/place the file in the same folder as the current project is saved in")
+
 data = data[["skills", "preferredLabel_en"]].dropna()
 
 model_name = 'paraphrase-MiniLM-L6-v2'
@@ -18,8 +26,8 @@ if os.path.exists(embedding_file):
     print("Found cached embeddings, loading from file...") 
     convertedskills = np.load(embedding_file)
 else:
-    print(" No cache found, please visit ")
-
+    print(" No cache found, please visit https://drive.google.com/file/d/1s48kuUCi3usaXTMns8kdvFDouvnOiPC-/view?usp=sharing and download the file.")
+    print("/place the file in the same folder as the current project is saved in")
 
 nn_model = NearestNeighbors(n_neighbors=10, metric='cosine')
 nn_model.fit(convertedskills)

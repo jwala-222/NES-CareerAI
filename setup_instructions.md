@@ -16,10 +16,16 @@ requirements.txt includes:
 # 🗃️ Required Data Files
 
 The model relies on a few essential data files. Due to size limits, these aren’t hosted directly on GitHub. Download them from the links below:
-File Name	Description	Link
-convertedskills.npy	Precompiled sentence embeddings of the ESCO-based Karrierewege dataset (≈4 GB)	Download link - https://drive.google.com/file/d/1s48kuUCi3usaXTMns8kdvFDouvnOiPC-/view?usp=sharing
-career_data.csv	Cleaned and structured subset of the Karrierewege dataset	(also ≈4 GB) Download link - https://drive.google.com/file/d/1CRKWgIMGKn_i6SX5pOBj0VNKpqsi20vd/view?usp=sharing
-knn_model.joblib	Serialized KNN model trained on the embeddings	Download link here-would be updated once the web part is finished
+
+File Name	
+convertedskills.npy	Precompiled sentence embeddings of the ESCO-based Karrierewege dataset (≈4 GB)	
+Download link - https://drive.google.com/file/d/1s48kuUCi3usaXTMns8kdvFDouvnOiPC-/view?usp=sharing
+
+career_data.csv	Cleaned and structured subset of the Karrierewege dataset	(also ≈4 GB)
+Download link - https://drive.google.com/file/d/1CRKWgIMGKn_i6SX5pOBj0VNKpqsi20vd/view?usp=sharing
+
+knn_model.joblib Serialized KNN model trained on the embeddings	
+Download link -would be updated once the web part is finished
 
 
 # 🧪 How to Use

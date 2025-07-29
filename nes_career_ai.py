@@ -15,13 +15,10 @@ converter = SentenceTransformer(model_name)
 embedding_file = "convertedskills.npy"
 
 if os.path.exists(embedding_file):
-    print("Found cached embeddings, loading from file...")
+    print("Found cached embeddings, loading from file...") 
     convertedskills = np.load(embedding_file)
 else:
-    print(" No cache found, generating new embeddings...")
-    convertedskills = converter.encode(data["skills"].tolist(), show_progress_bar=True)
-    np.save(embedding_file, convertedskills)
-    print(" Embeddings saved to disk.")
+    print(" No cache found, please visit ")
 
 
 nn_model = NearestNeighbors(n_neighbors=10, metric='cosine')

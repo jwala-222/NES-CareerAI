@@ -6,16 +6,15 @@ from sklearn.neighbors import NearestNeighbors
 from collections import Counter
 
 maindata="karrierewege.csv"
+model_name = 'paraphrase-MiniLM-L6-v2'
+embedding_file = "convertedskills.npy"
 
 if os.path.exists(maindata):
     print("Found main database , loading from file...") 
     data = pd.read_csv(maindata)
     data = data[["skills", "preferredLabel_en"]].dropna()
 
-    model_name = 'paraphrase-MiniLM-L6-v2'
     converter = SentenceTransformer(model_name)
-
-    embedding_file = "convertedskills.npy"
 
     if os.path.exists(embedding_file):
         print("Found cached embeddings, loading from file...") 

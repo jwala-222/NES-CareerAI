@@ -25,17 +25,17 @@ if os.path.exists(maindata):
 
 
         def top3(skillinput):
-        input_vector = converter.encode([skillinput])
-        distance, indices = nn_model.kneighbors(input_vector)
+            input_vector = converter.encode([skillinput])
+            distance, indices = nn_model.kneighbors(input_vector)
     
-        raw_predictions = data.iloc[indices[0]]["preferredLabel_en"].values
-        counter = Counter(raw_predictions)
+            raw_predictions = data.iloc[indices[0]]["preferredLabel_en"].values
+            counter = Counter(raw_predictions)
 
-        top_unique = [out for out, _ in counter.most_common(3)]
-        print(f"\nSkills: {skillinput}")
+            top_unique = [out for out, _ in counter.most_common(3)]
+            print(f"\nSkills: {skillinput}")
         
-        for i, rec in enumerate(top_unique, 1):
-            print(f"Prediction {i}: {rec}")
+            for i, rec in enumerate(top_unique, 1):
+                print(f"Prediction {i}: {rec}")
 
         while True:
             usrinput = input("Enter your skill (type end to exit ): ")

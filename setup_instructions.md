@@ -7,15 +7,17 @@ system requirements -
 # 🐍 Python Libraries
 
 Install the required Python libraries with:
-pip install -r requirements.txt
+
+    pip install -r requirements.txt
+
 requirements.txt includes:
 
-    flask – for building the web interface
-    numpy – for working with numerical data
-    pandas – for handling datasets
-    scikit-learn – for using K-Nearest Neighbors
-    sentence-transformers – for vectorizing input text
-    joblib – for loading the trained models
+flask – for building the web interface
+numpy – for working with numerical data
+pandas – for handling datasets
+scikit-learn – for using K-Nearest Neighbors
+sentence-transformers – for vectorizing input text
+joblib – for loading the trained models
 
 # 🗃️ Required Data Files
 

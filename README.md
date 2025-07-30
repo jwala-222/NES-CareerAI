@@ -7,6 +7,8 @@ It's main target is students from classes 10-12.(that according to me is the mos
 
 This AI's brain is a sentence transformation model that lets it grasp the meaning behind the skill you're inputting, essentially words. It next searches for the most close or nearest sense-making employment utilizing a vast database I like to call the *KareerAIdataset* (based on the ESCO occupations dataset—really named *Karrierewege*, which translates in German as *career pathways— quite cool, right? ).
 
+!!please refer to sutupinstructions file is you wish to try this project for yourself!!
+
 # 🔍 What it does
 
 - You type a skill—such as "public speaking. "

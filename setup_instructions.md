@@ -34,11 +34,11 @@ Download link -would be updated once the web part is finished
 
 # 🧪 How to Use
 
-    Download the above files and place them in the project directory.
-    Update file paths in the Python script if needed.
-    Run your main script:
+Download the above files and place them in the project directory.
+Update file paths in the Python script if needed.
+Run your main script:
 
-python nes_career_ai.py
+    python nes_career_ai.py
 
 
 # 🧠 Background Note

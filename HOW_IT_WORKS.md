@@ -95,4 +95,4 @@ If you have more questions, feel free to reach out—or keep an eye on the GitHu
 ---
 
 Thanks for reading!  
-~ Abhimanyu (aka the creator of Torque)
+~ Abhimanyu 

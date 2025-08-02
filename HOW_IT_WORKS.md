@@ -8,13 +8,11 @@ In this file I will try to explain every major part of the project in plain term
 It’s a project made to help students get career suggestions based on their strengths and interests.
 
 You type something like:  
-> “I enjoy solving math problems and understanding how machines work.”
+> “Drawing”
 
 And NES-CareerAI will suggest job roles like:
-- Data Analyst  
-- Mechanical Engineer  
-- Research Scientist  
-
+- Ceramic Artist
+-     
 Now let’s break down how it works under the hood.
 
 ---
@@ -77,9 +75,8 @@ That’s why it uses a good amount of RAM (around 6 to 8 GB minimum). On my syst
 
 ---
 
-## Tech Summary (For the Nerds)
-
-- **Frontend**: HTML/CSS  
+## Tech Summary 
+  
 - **Backend**: Python + Flask  
 - **NLP Model**: `all-MiniLM-L6-v2` via `SentenceTransformers`  
 - **ML Algorithm**: KNN from `scikit-learn`  

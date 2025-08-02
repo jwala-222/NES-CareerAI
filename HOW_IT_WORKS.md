@@ -71,7 +71,7 @@ Think of it like this:
 > Your SSD is a big warehouse, your RAM is a small room.   
 > If you want to read all the labels on 600,000 boxes, it's better to bring them all into the room rather than keep going back and forth to the warehouse.
 
-That’s why it uses a good amount of RAM (around 6 to 8 GB minimum). On my system, I use Linux with swap enabled, so I get extra memory by using SSD as virtual RAM.
+That’s why it uses a good amount of RAM (around 8 to 10 GB minimum). On my system, I use Linux with swap enabled, so I get extra memory by using SSD as virtual RAM.
 
 ---
 
